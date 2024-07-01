@@ -1,0 +1,68 @@
+
+// @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+$primary: #222222;
+$secondary: #7A7A7A;
+$success: #42ba96;
+
+
+// $btn-link-color: rgb(165, 187, 41);
+
+// $text-blue: ;
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+
+
+
+$custom-theme : ("dark-green": #033303,
+    "magneta" : #9d0088,
+    "subtel" : #cea6e1,
+    "gray-300" : $gray-300,
+    "gray-400" : $gray-400,  
+    "gray-500" : $gray-500,  
+    "gray-600" : $gray-600,
+    "gray-700" : $gray-700,
+    "cream" : #F3F2EC,
+    "main-btn" : #C0C0C0,
+    "logo-strip" : #EDEBE4,
+    "line"  : #E0E0E0,
+    "nav-item": #111111,
+    "social": #9F9F9F,
+    "social-hover": #555555,
+    "navitem-hover": #74642F,
+);
+
+
+$theme-colors: map-merge($custom-theme , $theme-colors );
+
+$spacer: 1rem !default;
+$new-spacers: (
+    6: $spacer * 2,
+    7: $spacer * 4,
+    8: $spacer * 4.5,
+    9: $spacer * 5,
+    10: $spacer * 6,
+    11: $spacer * 7,
+);
+
+$spacers : map-merge($new-spacers , $spacers );
+
+$link-decoration: none;
+
+
+$link-hover-color: #74642F;
+
+$btn-padding-x: 1.25rem;
+$btn-padding-y: 0.8125rem;
+
+$btn-font-size:1.0625rem;
+
+
+
+
+
+
+
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
