@@ -75,3 +75,37 @@
     
 }
 
+
+
+// Button styles 
+.carousel-control-prev {
+    // Set parent opacit to 100%
+    opacity: 1 !important;
+}
+
+.carousel-control-prev-icon {
+    // Hide the default icon 
+    background: transparent;
+    position: relative;
+}
+
+.carousel-control-prev-icon::after {
+    // New icon
+    content: '<';
+    border-radius: 100%;
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    transition-duration: 300ms;
+}
+
+.carousel-control-prev-icon:hover {
+    // Hover animation
+    opacity: 0.9 !important;
+}
